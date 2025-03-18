@@ -1,0 +1,34 @@
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 13px;
+}
+footer {
+    margin-top: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ok {
+    background-color: black;
+    color: white;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+}
+
+.ok:hover {
+    opacity: 0.4;
+    background-color: green;
+}
+
+.cancel:hover {
+    opacity: 0.4;
+    background-color: blue;
+}

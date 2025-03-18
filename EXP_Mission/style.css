@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+.header {
+    position: fixed;
+    display: flex;
+    max-width: 1920px;
+    background-color: red;
+    height: 68px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

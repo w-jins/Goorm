@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.header {
+    background-color: aqua;
+    width: 700px;
+}
+
+.sidebar {
+    background-color: beige;
+    width: 200px;
+    font-size: 32px;
+
+}
+
+.main-content {
+    background-color: blue;
+    width: 500px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.main-content div:nth-child(2) {
+    font-size: 22px;
+    background-color: blueviolet;
+}
+
+
+.footer {
+    background-color: yellow;
+    width: 700px;
+}
