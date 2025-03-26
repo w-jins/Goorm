@@ -7,8 +7,12 @@ export default function AsyncFetch() {
 
   useEffect(() => {
     const res = async () => {
-      const data = await axiosAPI.get(request.fetchNetflixOriginals);
-      setMovie(data.data.results);
+      try {
+        const data = await axiosAPI.get(request.fetchNetflixOriginals);
+        setMovie(data.data.results);
+      } catch (e) {
+        throw Error(e.message);
+      }
     };
     res();
   }, []);
