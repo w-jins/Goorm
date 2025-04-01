@@ -10,7 +10,18 @@ export default function AsyncFetch() {
     backgroundColor: isDark ? "#333" : "#fff",
     color: isDark ? "#fff" : "#333",
   };
+  // ** Async Await 비동기 처리 학습
+  // const AsyncAwait = async () => {
+  //   try {
+  //     const data = await axiosAPI.get(request.fetchNetflixOriginals);
+  //     setMovie(data.data.results);
+  //   } catch (e) {
+  //     throw Error(e.message);
+  //   }
+  // };
+  // AsyncAwait();
 
+  // ** useEffect 를 이용한 마운트 언마운트 확인하기
   useEffect(() => {
     const res = async () => {
       try {
