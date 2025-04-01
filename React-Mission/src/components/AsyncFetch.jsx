@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axiosAPI from "../api/axios";
 import request from "../api/requests";
+import { ThemeContext } from "./context/ThemeContext";
 
 export default function AsyncFetch() {
   const [movie, setMovie] = useState([]);
+  const { isDark } = useContext(ThemeContext);
+  const style = {
+    backgroundColor: isDark ? "#333" : "#fff",
+    color: isDark ? "#fff" : "#333",
+  };
 
   useEffect(() => {
     const res = async () => {
@@ -18,7 +24,7 @@ export default function AsyncFetch() {
   }, []);
   return (
     <div>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-3 gap-4' style={style}>
         {movie.map((item) => (
           <div key={item.id} className='p-4 border-2 border-gray-200'>
             <p className='text-center text-xs mb-2'>{item.name}</p>
