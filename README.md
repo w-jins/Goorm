@@ -1,4 +1,5 @@
-# Goorm
+# Goorm 개인 Mission
+---
 
 Study
 <br>
